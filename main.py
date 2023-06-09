@@ -14,10 +14,16 @@ nlp = spacy.load("en_core_web_sm")
 def kg_from_corpus(txt):
     # Process corpus
     doc = nlp(txt)
-    lst_docs = list(doc.sents) #[sent for sent in doc.sents]
+    lst_docs = list(doc.sents)
 
     # Entity and relation extraction
-    dic = {"id": [], "text": [], "entity": [], "relation": [], "object": []}
+    dic = {
+        "id": [], 
+        "text": [], 
+        "entity": [], 
+        "relation": [], 
+        "object": []
+    }
 
     for n, sentence in enumerate(lst_docs):
         lst_generators = list(textacy.extract.subject_verb_object_triples(sentence))
