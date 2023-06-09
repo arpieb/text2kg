@@ -1,7 +1,7 @@
 # text2kg
 Quick-n-Dirty&trade; text-to-knowledge-graph PoC using off-the-shelf tooling, inspired by approach + code in [mdipietro09/DataScience_ArtificialIntelligence_Utils](https://github.com/mdipietro09/DataScience_ArtificialIntelligence_Utils).
 
-YMMV; this PoC was born from explorations into using KGs to construct fine-tuning datasets for instruct-oriented LLMs based on [this article](https://betterprogramming.pub/large-language-model-knowledge-graph-store-yes-by-fine-tuning-llm-with-kg-f88b556959e6).
+YMMV; this PoC was born from explorations into using KGs to construct fine-tuning datasets for instruct-oriented LLMs based on approaches proposed in [this article](https://betterprogramming.pub/large-language-model-knowledge-graph-store-yes-by-fine-tuning-llm-with-kg-f88b556959e6).
 
 ## Installation
 
