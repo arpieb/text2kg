@@ -1,3 +1,4 @@
+beautifulsoup4==4.12.2
 blis==0.7.9
 cachetools==5.3.1
 catalogue==2.0.8
@@ -18,6 +19,7 @@ Jinja2==3.1.2
 joblib==1.2.0
 kiwisolver==1.4.4
 langcodes==3.3.0
+Markdown==3.4.3
 MarkupSafe==2.1.3
 matplotlib==3.7.1
 murmurhash==1.0.9
@@ -39,6 +41,7 @@ scipy==1.10.1
 seaborn==0.12.2
 six==1.16.0
 smart-open==6.3.0
+soupsieve==2.4.1
 spacy==3.5.3
 spacy-legacy==3.0.12
 spacy-loggers==1.0.4

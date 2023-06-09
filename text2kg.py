@@ -2,26 +2,32 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
+from functools import cache
+
 import matplotlib.pyplot as plt
 import networkx as nx
 import pandas as pd
 import spacy
 import textacy
 
-nlp = spacy.load("en_core_web_sm")
+
+@cache
+def get_nlp():
+    return spacy.load("en_core_web_sm")
 
 
-def kg_from_corpus(txt):
+def text2kg(txt):
     # Process corpus
+    nlp = get_nlp()
     doc = nlp(txt)
     lst_docs = list(doc.sents)
 
     # Entity and relation extraction
     dic = {
-        "id": [], 
-        "text": [], 
-        "entity": [], 
-        "relation": [], 
+        "id": [],
+        "text": [],
+        "entity": [],
+        "relation": [],
         "object": []
     }
 
@@ -65,14 +71,3 @@ def plot_kg(G):
     nx.draw_networkx_edge_labels(G, pos=pos, label_pos=0.5, edge_labels=nx.get_edge_attributes(G, 'relation'),
                                  font_size=12, font_color='black', alpha=0.6)
     plt.show()
-
-
-if __name__ == '__main__':
-    with open('data/corpus.txt') as ifs:
-        doc = ifs.read()
-    kg = kg_from_corpus(doc)
-
-    print(f"num nodes: {kg.number_of_nodes()}")
-    print(f"num edges: {kg.number_of_edges()}")
-
-    plot_kg(kg)
