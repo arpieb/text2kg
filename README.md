@@ -1,5 +1,5 @@
 # text2kg
-Simple text-to-knowledge-graph PoC using off-the-shelf tooling, inspired by approach + code in [mdipietro09/DataScience_ArtificialIntelligence_Utils](https://github.com/mdipietro09/DataScience_ArtificialIntelligence_Utils).
+Quick-n-Dirty&trade; text-to-knowledge-graph PoC using off-the-shelf tooling, inspired by approach + code in [mdipietro09/DataScience_ArtificialIntelligence_Utils](https://github.com/mdipietro09/DataScience_ArtificialIntelligence_Utils).
 
 YMMV; this PoC was born from explorations into using KGs to construct fine-tuning datasets for instruct-oriented LLMs based on [this article](https://betterprogramming.pub/large-language-model-knowledge-graph-store-yes-by-fine-tuning-llm-with-kg-f88b556959e6).
 
@@ -40,4 +40,4 @@ None.  PoC codebase made available if anyone finds bits of it useful for anythin
 
 ## License
 
-Yeah, the Unlicense.  I can't really claim much considering I 'Steined this one together from several different sources and OSS tools.  Use at your own risk.
+Yeah, the Unlicense.  I can't really claim much considering I 'Steined&trade; this one together from several different sources and OSS tools.  Use at your own risk; no guarantees, warranties, or any other Ts implied or otherwise.
